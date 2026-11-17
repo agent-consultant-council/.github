@@ -1,0 +1,50 @@
+name: Feature Request
+description: Suggest an improvement or new capability
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Motivation
+      description: What problem are you trying to solve?
+      placeholder: Describe the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      description: Describe the feature or improvement.
+      placeholder: Describe your solution.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What other approaches have you considered?
+    validations:
+      required: false
+  - type: dropdown
+    id: component
+    attributes:
+      label: Affected Component
+      options:
+        - Core
+        - Contracts
+        - Security
+        - Providers
+        - MCP
+        - CLI
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Include diagrams, examples, or relevant context.
+    validations:
+      required: false
